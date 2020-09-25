@@ -23,5 +23,5 @@ app.get('/', async (req, res) => {
   console.log(txt);
   return res.send(txt);
 });
-
-app.listen(3333);
+var port = process.env.PORT || 3333;
+app.listen(port);
